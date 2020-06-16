@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Bomberman 2020</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=713px, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="./scripts/jquery-3.4.1.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=713px, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-starturl" content="/index.html">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Space Missions">
+    <meta name="apple-mobile-web-app-title" content="Space Missions">
+    <meta name="theme-color" content="#FF9800">
+    <meta name="msapplication-navbutton-color" content="#FF9800">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" sizes="128x128" href="/images/touch/icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="/images/touch/icon-128x128.png">
+    <link rel="icon" sizes="192x192" href="icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/images/touch/icon-192x192.png">
+    <link rel="icon" sizes="256x256" href="/images/touch/icon-256x256.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="/images/touch/icon-256x256.png">
+    <link rel="icon" sizes="384x384" href="/images/touch/icon-384x384.png">
+    <link rel="apple-touch-icon" sizes="384x384" href="/images/touch/icon-384x384.png">
+    <link rel="icon" sizes="512x512" href="/images/touch/icon-512x512.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="/images/touch/icon-512x512.png">
+
+</head>
+<body>	
+    <div class="header">
+        <img src="images/logo.png" alt="">
+    </div>
+    <button id="myBtn">Voir les règles du jeu</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/rules.png" alt="">
+        </div>
+    </div>
+    <div class="lives" id="lives">
+        <div class="live"><img src="images/life.png" alt=""></div>
+        <div class="live"><img src="images/life.png" alt=""></div>
+        <div class="live"><img src="images/life.png" alt=""></div>
+    </div>
+    <div class="end-buttons">
+        <button><a href="/">Jouer (Solo)</a></button>
+        <button><a href="/">Jouer (IA)</a></button>
+    </div>
+    
+    <script type="text/javascript" src="<?= URL ?>assets/js/start-play.js"></script>
+    <script type="text/javascript" src="<?= URL ?>assets/js/game-set.js"></script>
+    <script type="text/javascript" src="<?= URL ?>assets/js/player.js"></script>
+    <script type="text/javascript" src="<?= URL ?>assets/js/a_i_player3.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src='scripts/config.js'></script>
+    <script src='scripts/comportement.js'></script>
+</body>
+</html>
